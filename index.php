@@ -33,12 +33,14 @@ if(isset($_POST['less']) and isset($_POST['big'])) {
     mobile($_POST['num1'], $_POST['num2'], $_POST['status']);
 }
 }
-?>
+
+if(!isset($_POST['Submit'])):?>
 <html><head>
     <title>Mobile Number Generator</title>
 </head>
 <body>
     <form method="post">
+        E.X : First Number : 0930 , Second Number : 791 , Status : Number , From : 0 , To : 10000 .
         First number:<input type="number"  name="num1"><br>
         Second number:<input type="number" name="num2"><br>
         Status:Number<input type="radio" name="status" value="num">
@@ -49,3 +51,4 @@ if(isset($_POST['less']) and isset($_POST['big'])) {
     </form>
 </body>
 </html>
+<?php endif ?>
