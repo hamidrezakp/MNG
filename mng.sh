@@ -56,7 +56,7 @@ do
 			for i in $(seq 0 9999)
 				do 
 					num=$( printf '%04d' $i )
-					echo -e	"BEGIN:VCARD \nVERSION:2.1\nN:;$first$second$num;;;\nFN:$first$second$num\nTEL;CELL:\nEND:VCARD" >> $dir		
+					echo -e	"BEGIN:VCARD \nVERSION:2.1\nN:;$first$second$num;;;\nFN:$first$second$num\nTEL;CELL:$first$second$num\nEND:VCARD" >> $dir		
 				done
 			echo -e "${grean}File successfully saved${nc}"
 			goto main
