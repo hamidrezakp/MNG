@@ -1,5 +1,5 @@
 #!/bin/bash
-#Mobie numbers generte
+#Mobie numbers generator
 red='\e[0;31m'
 cyan='\e[0;36m'
 grean='\e[0;32m'
